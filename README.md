@@ -1,0 +1,1 @@
+This project is my first attempt to use my html, css and jQuery knowledge to conceive, design and build a website from scratch. I decided to build a site for the All Souls Young Adults group at the Unitarian Church of All Souls in NYC, of which I am a member. This website showcases who we are, what we do and how to get involved.
