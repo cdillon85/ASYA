@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/****************
+BACKGROUND IMAGE SLIDER
+******************/
+
+#background{
+width:100%;
+height:100%;
+top:0;
+left:0;
+overflow:hidden;
+background-color:#211f1f;	
+position:fixed;
+z-index: 1;
+}
+
+#background>img{
+width:100%;
+position:fixed;
+display:none;
+}
+
+
+/****************
+BACKGROUND STATIC IMAGES
+******************/
+
+.backgroundStatic{
+width:100%;
+height:100%;
+top:0;
+left:0;
+background-color:#211f1f;   
+position:fixed;
+z-index: 1;
+}
+
+.backgroundStatic>img{
+width:100%;
+position:fixed;
+}
+
+/*************
+MENU NAVIGATION
+**************/
+
+nav {
+    background-color: rgba(0, 0, 0, .5);
+    width:300px;
+    height:350px;
+    z-index: 2;
+    position:fixed;
+}
+
+h1{
+    font-size:60px;
+    margin:15px;
+    padding:5px;
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+
+/* sub navigation */
+nav li ul {    
+    background-color: rgba(0, 0, 0, .5);
+    position:absolute;
+    left:0;
+    top:350px; 
+    width:300px;
+    font-size: 30px;
+}
+nav li li {
+    position:relative;
+    text-indent: 40px;
+    margin-top:15px;
+    display:block;
+}
+
+
+/* styling for all links */
+nav a {
+    font-family: "Abril Fatface", cursive;
+}
+
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+
+.sub-link a:hover,
+.sub-link a:focus,
+.sub-link a:active {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+
+/********CONTENT***********/
+
+.container{
+    position:relative;
+    z-index:3;
+    top:550px;
+}
+
+.title h1{
+    font-family: "Abril Fatface", cursive;
+    color:#fff;
+    font-size:90px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin-left:450px;
+    margin-top:0;
+    margin-bottom: 0;
+    padding:0;
+}
+
+.content{
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(70%,rgba(255,255,255,1)), color-stop(0%,rgba(255,255,255,0)));
+    height:450px;
+    padding:30px 150px 30px 150px;
+
+}
+
+.content p{
+    font-family: 'Open Sans', sans-serif;
+    color:#000;
+    font-size:25px;
+    margin:30px 0 30px 0;
+}
+
+.content p a{
+    text-decoration: none;
+    color:#000;
+}
+
+.content p a:hover{
+    background-color:rgba(37, 71, 104, 0.5);
+    color:#fff;
+    border-radius: 10px;
+
+}
+
+.content a img{
+    height:250px;
+    width:600px;
+    margin-left: 200px;
+    border: 1px solid #021a40;
+
+}
+
+#where{
+    float:left;
+    margin-right:750px;
+    padding:0;
+    position:absolute;
+}
+
+
+#map{
+    
+    width:500px;
+    height:350px;
+    margin-top:0;
+    position:relative;
+    float:right;
+}
+
+#contact{
+    margin-left: 350px;
+
+}
+
+/*******RETURN BTN *********/
+
+#return-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 75px;
+    height: 75px;
+    z-index: 5;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top div{
+    position: absolute;
+    text-align: center;
+    margin-top: 22px;
+
+}
+
+#return-to-top div a{
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    text-decoration: none;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/*********EMAIL FORM **************/
+
+
+#contact_form{
+    height: 275px;
+    width:400px;
+    position:inline-block;
+    z-index: 6;
+    background-color: #e1e9eb;
+    border: solid 1px #e5e5e5;
+    padding: 10px 20px 50px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+input{
+    line-height: 31px;
+}
+
+input, textarea{
+    width: 300px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,.6);
+    border: solid 1px #b6c7cb;
+}
+
+
+#submit_button{
+    width: 109px;
+    height: 34px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #86c5fa;
+    -webkit-box-shadow: inset 0 2px rgba(255,255,255,.29);
+    -moz-box-shadow: inset 0 2px rgba(255,255,255,.29);
+    box-shadow: inset 0 2px rgba(255,255,255,.29);
+    border: solid 1px #77a4cb;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 7px;
+}
+
+label.required:after {
+  content:'*';
+  color:red;
+}
+
+
+.row {
+  margin:10px;
+}
+
+
+
+
+
+
+
+
+
